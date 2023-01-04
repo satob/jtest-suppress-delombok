@@ -30,8 +30,8 @@ java {
 }
 
 // Set as appropriate for your organization
-group = "com.yourorg"
-description = "Rewrite recipes."
+group = "jp.gr.java_conf.satob"
+description = "OpenRewrite recipe for the findings of Jtest report on the delombok generated code to be suppressed."
 
 repositories {
     mavenLocal()
@@ -69,6 +69,9 @@ dependencies {
 
     testImplementation("org.openrewrite:rewrite-test")
     testImplementation("org.assertj:assertj-core:latest.release")
+
+    compileOnly("org.projectlombok:lombok")
+    compileOnly("javax.annotation:javax.annotation-api:1.3.2")
 }
 
 tasks.named<Test>("test") {

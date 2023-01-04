@@ -15,7 +15,7 @@
  */
 @NonNullApi
 @NonNullFields
-package com.yourorg;
+package jp.gr.java_conf.satob.jtestsuppressdelombok;
 
 import org.openrewrite.internal.lang.NonNullApi;
 import org.openrewrite.internal.lang.NonNullFields;
